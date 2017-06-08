@@ -11,8 +11,7 @@ module.exports = {
 	},
 	output:{
 		filename:'/js/[name].js',
-		path:path.resolve(__dirname,'dist')
-		
+		path:path.resolve(__dirname,'dist')		
 	},
 	//扩展 在引入一个js或css的时候不用再写后缀名
 	resolve:{
@@ -21,7 +20,8 @@ module.exports = {
 	module:{
 		loaders:[
 			{ test:/\.(js|jsx)$/,loader:'babel'},
-			{ test: /\.css$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract('style-loader','css-loader') },
+			{ test: /\.css$/, exclude: /node_modules/,loader: ExtractTextPlugin.extract('style-loader','css-loader') },
+			{ test: /\.less$/, exclude: /node_modules/,loader: ExtractTextPlugin.extract('style-loader','css-loader','less-loader') },
 			{ test:/\.(png|gif|jpg|jpeg|bmp)$/i, loader:'url-loader?limit=5000&name=img/[name].[ext]?[hash]' },  // 限制大小5kb  //name 代表要生成的图片文件名和路径
             { test:/\.(png|woff|woff2|svg|ttf|eot)($|\?)/i, loader:'url-loader?limit=5000&name=[name].[ext]?[hash]'} // 限制大小小于5k
 		]
