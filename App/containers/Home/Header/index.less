@@ -1,0 +1,30 @@
+@bgColor:red;
+#header{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+	padding: 0.2rem 0;
+	width: 100%;
+	background-color: @bgColor;
+}
+.left{
+	flex-grow:1;
+	color: #fff;
+}
+.middle{
+	flex-grow:3;
+	.search{
+		padding-left: 0.025rem;
+		border-radius: 0.05rem;
+		width: 80%;
+	}
+	.search:focus{
+		outline: none;
+	}	
+}
+
+.right{
+	flex-grow:1;
+	color: #fff;
+}
