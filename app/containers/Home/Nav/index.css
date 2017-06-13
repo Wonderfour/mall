@@ -1,0 +1,16 @@
+#nav {
+  margin-top: 0.3em;
+}
+#nav .nav {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 0.5em;
+}
+#nav .nav img {
+  height: 4em;
+  width: 4em;
+}
+#nav .nav div {
+  margin-top: 0.1em;
+}

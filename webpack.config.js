@@ -22,7 +22,7 @@ module.exports = {
 			{ test:/\.(js|jsx)$/,loader:'babel'},
 			{ test: /\.(css|less)$/, exclude: /node_modules/,loader: ExtractTextPlugin.extract('style-loader','css-loader','less-loader') },
 			{ test:/\.(png|gif|jpg|jpeg|bmp)$/i, loader:'url-loader?limit=5000&name=img/[name].[ext]?[hash]' },  // 限制大小5kb  //name 代表要生成的图片文件名和路径
-            { test:/\.(png|woff|woff2|svg|ttf|eot)($|\?)/i, loader:'url-loader?limit=5000&name=[name].[ext]?[hash]'} // 限制大小小于5k
+            { test:/\.(woff|woff2|svg|ttf|eot)($|\?)/i, loader:'url-loader?limit=5000&name=[name].[ext]?[hash]'} // 限制大小小于5k
 		]
 	},
 	//插件

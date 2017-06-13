@@ -3,6 +3,8 @@ import { DatePicker,Icon } from 'antd'
 import TopAct from './TopAct'
 import Header from './Header'
 import Swiper from './Swiper'
+import Nav from './Nav'
+import Ten from './Ten'
 
 
 //import '../../assets/img/test.jpg'
@@ -14,6 +16,8 @@ class Home extends React.Component{
 				<TopAct  show={true}/>
 				<Header />
 				<Swiper />
+				<Nav />
+				<Ten />
 			</div>
 		)
 	}

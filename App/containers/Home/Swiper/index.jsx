@@ -15,12 +15,12 @@ class Swiper extends React.Component{
 	      slidesToScroll: 1
 	    };
 		return(
-				 <Slider {...settings}>
-				    <div className="slider-body"><img src={require('../../../assets/img/5.jpg')} /></div>
-				    <div className="slider-body"><img src={require('../../../assets/img/6.jpg')} /></div>
-				    <div className="slider-body"><img src={require('../../../assets/img/7.jpg')} /></div>
-				    <div className="slider-body"><img src={require('../../../assets/img/8.jpg')} /></div>
-				</Slider>
+			 <Slider {...settings}>
+			    <div className="slider-body"><img src={require('../../../assets/img/5.jpg')} /></div>
+			    <div className="slider-body"><img src={require('../../../assets/img/6.jpg')} /></div>
+			    <div className="slider-body"><img src={require('../../../assets/img/7.jpg')} /></div>
+			    <div className="slider-body"><img src={require('../../../assets/img/8.jpg')} /></div>
+			</Slider>
 		)
 	}
 }
