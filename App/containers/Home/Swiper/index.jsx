@@ -9,18 +9,21 @@ class Swiper extends React.Component{
 		var settings = {
 	      dots: true,
 	      infinite: true,
+	      arrows:false,
 	      autoplay:true,
 	      speed: 1000,
 	      slidesToShow: 1,
 	      slidesToScroll: 1
 	    };
 		return(
-			 <Slider {...settings}>
-			    <div className="slider-body"><img src={require('../../../assets/img/5.jpg')} /></div>
-			    <div className="slider-body"><img src={require('../../../assets/img/6.jpg')} /></div>
-			    <div className="slider-body"><img src={require('../../../assets/img/7.jpg')} /></div>
-			    <div className="slider-body"><img src={require('../../../assets/img/8.jpg')} /></div>
-			</Slider>
+			<div className="slider">
+				<Slider {...settings}>
+				    <div className="slider-body"><img src={require('../../../assets/img/5.jpg')} /></div>
+				    <div className="slider-body"><img src={require('../../../assets/img/6.jpg')} /></div>
+				    <div className="slider-body"><img src={require('../../../assets/img/7.jpg')} /></div>
+				    <div className="slider-body"><img src={require('../../../assets/img/8.jpg')} /></div>
+				</Slider>
+			</div>
 		)
 	}
 }

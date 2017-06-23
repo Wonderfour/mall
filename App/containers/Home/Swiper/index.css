@@ -1,4 +1,10 @@
-.slider-body img {
+.slider {
+  width: 100%;
+}
+.slick-slider {
+  width: 100%;
+}
+.slick-slider img {
   height: 100%;
   width: 100%;
 }

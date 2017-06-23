@@ -1,12 +1,17 @@
 import React from 'react'
-import { render } from 'react-dom'
-import {browserHistory } from 'react-router'
+import {render} from 'react-dom'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import Todo from './containers/todo'
+import todoApp from './reducers'
 
 
-import RouteMap from './router/routeMap'
-//淘宝自适应js代码 
-import './assets/js/selfAdaption'
+let store = createStore(todoApp)
+let rootElement = document.getElementById('root');
+
 render(
-	<RouteMap history={browserHistory}/>,
-	document.getElementById('root')
+	<Provider store={store}>
+		<Todo />
+	</Provider>,
+	rootElement
 )

@@ -5,6 +5,7 @@ import {Router,Route,IndexRoute} from 'react-router'
 import App from '../containers/App'
 import Home from '../containers/Home'
 import Search from '../containers/Search'
+import Bar from '../containers/Bar'
 
 
 class RouteMap extends React.Component{
@@ -13,7 +14,8 @@ class RouteMap extends React.Component{
 			<Router history = {this.props.history}>
 				<Route path="/" component = {App}>
 					<IndexRoute component ={Home}/>
-					<Route path="search" component={Search} />
+					<Route path="search:value" component={Search} />
+					<Route path="bar" component={Bar} />
 				</Route>
 			</Router>
 		)

@@ -21,3 +21,54 @@
   text-align: left;
   margin-left: 0.5em;
 }
+.poster {
+  margin-top: 1em;
+}
+.poster .poster-img {
+  width: 100%;
+}
+.poster .poster-title {
+  line-height: 2em;
+}
+.poster .poster-title .laba {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.product-list {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5em;
+}
+.product-list .pro-body {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.product-list .pro-body .pro-price {
+  text-align: left;
+  margin-left: 0.5em;
+  color: red;
+  font-size: 1.5em;
+}
+.product-list .pro-body .pro-title {
+  text-align: left;
+  margin-left: 0.5em;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+.footer .foot-icon {
+  width: 25%;
+  float: left;
+}
+.footer .on-icon {
+  color: red;
+}
